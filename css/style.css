@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Cooper;
+  src: url(../fonts/CenturyGothicRegular.ttf);
+}
+
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../fonts/CenturyGothicRegular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: CenturyGothic;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section .imgBx {
+  position: relative;
+  width: calc(100% - 560px);
+  height: 100%;
+}
+
+section .imgBx::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(255deg, #e91e63, #03a9f4);
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+
+section .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

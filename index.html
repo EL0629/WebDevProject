@@ -1,42 +1,40 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>HomePage</title>
 
     <!-- CSS Style -->
-    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="../css/style.css" rel="stylesheet" media="screen">
 </head>
+
 <body>
-  <section>
-      <div class="img-style">
-        <img src="img/Background.jpg">
-      </div>
-      <div class="content-style">
-        <div class="form-style">
-            <h2 class="title">Login Section</h2>
-            <form>
-                <div class="input-style">
-                    <span>Email Address:</span>
-                    <input type="text" placeholder="Enter Email Address">
-                </div>
-                <div class="input-style">
-                    <span>Password:</span>
-                    <input type="password" placeholder="Enter Password">
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox"> Remember Me</label>
-                </div>
-                <div class="input-style">
-                    <button type="submit" value="Submit" onclick="href = 'registrationpage.html';">Sign In</button>
-                </div>
-                <div class="input-style">
-                    <p>Don't have an account? <a href="pages/registrationpage.html">Sign up</a></p>
-                </div>
-            </form>
-        </div>
-      </div>
-  </section>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Profile</a>
+        <a href="#news">Gallery</a>
+        <a href="#news">Videos</a>
+        <a href="#news">Audit Trial</a>
+        <a href="pages/loginpage.html">Login</a>
+        <a href="pages/registrationpage.html">Registration</a>
+    </div>
+
+    <div class="banner-area" style="height:670px">
+    
+    </div>
+
+    <div>
+        <form class="index-form">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
 </body>
+
 </html>
